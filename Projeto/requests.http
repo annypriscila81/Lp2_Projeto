@@ -1,0 +1,9 @@
+###POST Data
+
+POST http://127.0.0.1:3000/calcularData
+Content-Type: application/json
+
+{
+  "dataInicial": "28/09/2020",
+  "dataFinal": "29/09/2020"
+}
