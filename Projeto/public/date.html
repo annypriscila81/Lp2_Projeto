@@ -4,40 +4,40 @@
     <meta name="viewport" content="width=device-width">
     <title>DateCalculator</title>
     <link href="css/date.css" rel="stylesheet" type="text/css" />
-    <<style>
-        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600;1,700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-        </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600;1,700&display=swap%27');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap%27');
+    </style>
 
   </head>
   <body bgcolor="#CCEEEB">
       <div class="div1">
       <h1 class="titprincipal">DateCalculator</h1>
     </div>
-</br>
+    <ul class="navbar-nav ml-auto">
+  <li class="nav-item {% if title == "Cadastrar" %}active{% endif %}">
+    <a class="nav-link" href="./signup.html">Cadastrar</a>
+  </li>
+</ul>
+
 <div class="div2">
     <p class="textdatas"> Digite as datas desejadas:</p>
 </div>
-</br>
-     <form class="form1">
-     <p class="nomes"> Dia </p> <input type="number" id="dia"></br></input>
-     <p class="nomes"> Mês </p> <input type="number" id="mes"></input> 
-     <p class="nomes"> Ano </p> <input type="number" id="ano"></input>
-     </form>
-     <form class="form2">
-     <p class="nomes"> Dia </p> <input type="number" id="dia_final"></input>
-     <p class="nomes"> Mês </p> <input type="number" id="mes_final"></input>
-     <p class="nomes"> Ano </p> <input type="number" id="ano_final"></input>
+<form id="formulario">
+     Dia: <input type="number" id="dia"></input> Mês: <input type="number" id="mes"></input>
+      Ano: <input type="number" id="ano"></input>
      </br>
      </br>
-     <input type = 'submit' value='Enviar'></input>
+         Dia: <input type="number" id="dia_final"></input> Mês: <input type="number" id="mes_final"></input>
+          Ano: <input type="number" id="ano_final"></input>
     </br>
-</br>
+    </br>
+        <input type = 'submit' value='Enviar'></input>
      </form>
      <input readonly type="text" id="resultado"></input>
     </br>
     </br>
-    <script src='C:\Users\Anny\Documents\DateCalculator\Lp2_Projeto\Projeto\data.js'></script>
+    <script src='../public/data.js'></script>
     <footer class="nome">
         &copy; DateCalculator 2020
     </footer>

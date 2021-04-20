@@ -15,6 +15,15 @@ async function up() {
 
   const db = await conn();
 
+  await db.run( `
+    CREATE TABLE IF NOT EXISTS users (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      name TEXT,
+      email TEXT UNIQUE,
+      password TEXT
+    ) `
+  );
+
   await db.run(sql);
 }
 
@@ -22,6 +31,8 @@ async function down() {
   const sql = `DROP TABLE datas`;
 
   const db = await conn();
+
+  await db.run('DROP TABLE users');
 
   await db.run(sql);
 }

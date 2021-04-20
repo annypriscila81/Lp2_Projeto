@@ -11,8 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "bootstrap": "^4.5.3",
     "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "nunjucks": "^3.2.3",
+    "reload": "^3.1.1",
     "sqlite-async": "^1.1.0"
   },
   "devDependencies": {
