@@ -1,0 +1,26 @@
+.cadastrar{
+    font-size: 40px;
+    text-align: center;
+    vertical-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.area {
+    position: relative;
+    left: 37%;
+    top: 29%;
+    width: 320px;
+    height: 270px;
+}
+
+.area .formUser{
+    position: absolute;
+    display: block;
+}
+
+.formUser {
+    position: absolute;
+    left: 19px;
+    margin-right: 5px;
+
+}

@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>DateCalculator</title>
+    <link href="css/date.css" rel="stylesheet" type="text/css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600;1,700&display=swap%27');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap%27');
+    </style>
+
+  </head>
+  <body bgcolor="#CCEEEB">
+      <div class="div1">
+      <h1 class="titprincipal">DateCalculator</h1>
+    </div>
+    <ul class="navbar-nav ml-auto">
+  <li class="nav-item {% if title == "Cadastrar" %}active{% endif %}">
+    <a class="nav-link" href="./signup.html">Cadastrar</a>
+  </li>
+</ul>
+
+<div class="div2">
+    <p class="textdatas"> Digite as datas desejadas:</p>
+</div>
+<form id="formulario">
+     Dia: <input type="number" id="dia"></input> Mês: <input type="number" id="mes"></input>
+      Ano: <input type="number" id="ano"></input>
+     </br>
+     </br>
+         Dia: <input type="number" id="dia_final"></input> Mês: <input type="number" id="mes_final"></input>
+          Ano: <input type="number" id="ano_final"></input>
+    </br>
+    </br>
+        <input type = 'submit' value='Enviar'></input>
+     </form>
+     <input readonly type="text" id="resultado"></input>
+    </br>
+    </br>
+    <script src='../public/data.js'></script>
+    <footer class="nome">
+        &copy; DateCalculator 2020
+    </footer>
+  </body>
+</html>

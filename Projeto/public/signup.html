@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/signup.css" rel="stylesheet" type="text/css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600;1,700&display=swap%27');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap%27');
+      </style>
+    </head>
+<body bgcolor="#CCEEEB">
+<h1 class="cadastrar">CADASTRAR</h1>
+
+<div class="row">
+  <div class="area">
+    <form id="formUser" action="/signup" method="post">
+      <div class="form-group">
+        <label for="user-name">Nome</label>
+        <input type="text" class="form-control" id="user-name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="user-email">E-mail</label>
+        <input type="email" class="form-control" id="user-email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="user-password">Senha</label>
+        <input type="password" class="form-control" id="user-password" name="password">
+      </div>
+      <div class="form-group">
+        <label for="user-confirm_password">Confirmar Senha</label>
+        <input type="password" class="form-control" id="user-confirm_password" name="confirm_password">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary float-right">Confirmar</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
